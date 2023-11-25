@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <!---------------------------------------------------- 
+        * ctrl + ? to comment out the things you want 
+    ------------------------------------------------------>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="ZUITT Bootcamp">
+    <meta name="keywords" content="HTML, CSS, Bootstrap">
+    <meta name="author" content="Joemar Cardiño | joemar25">
+
+    <!---------------------------------------------------- 
+        * external links 
+          - web icon 
+          - bootstrap 
+          - google fonts (roboto, monsterrat, poppins, intel) 
+        * external css
+            - index.css
+        * title
+    ------------------------------------------------------>
+
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/7298/7298777.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Poppins:wght@100&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/index.css">
+
+    <title>Joemar Cardiño | Website Developer Portfolio [ZUITT] </title>
+
+</head>
+
+
+
+<body>
+
+    <!---------------------------------------------------- 
+        * div means wrapper/container for our layout 
+        * class is an attribute to name our div 
+    ------------------------------------------------------>
+
+    <div class="container mt-4">
+
+        <!---------------------------------------------------- 
+            * id is an attribute to name our tag uniquely  
+        ------------------------------------------------------>
+
+        <section id="LANDING" class="text-center mt-5">
+
+            <h1> Full Stack Web Developer </h1>
+            <p class="lead"> Hello! My name is Joemar and I love buildings things from scratch. </p>
+
+            <img id="PROFILE" src="/images/profile.jpg" alt="Profile" class="img-fluid">
+
+            <!-------------------------------------------------------- 
+                * inline element vs. block element
+                
+                * inline element - occupies only the space bounded
+                        by the tags that define the inline element
+
+                        example: <a> </a> <span> </span> <img> </img>
+                
+                * block element - occupies the entire space of its
+                        parent element (container), thereby
+                        creating a "block"
+
+                        example: <div> </div> <p> </p> <h1> </h1>
+            ---------------------------------------------------------->
+
+            <a href="mailto:joemarjane.cardino@bicol-u.edu.ph" class="btn btn-info btn-lg mt-3 text-decoration-none text-bolder">
+                Let's work together 👋
+            </a>
+
+        </section>
+    </div>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.onkeydown = function (e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

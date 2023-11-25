@@ -1,0 +1,62 @@
+* {
+  /*-----------------------------------------------------------------------
+    * note: sans-serif, if fail then it is the fallback (can be many)
+            - wag lang kay times new roman
+            - fonts is a big factor in design
+    
+    I also included my modification that I found suited for the design
+  ------------------------------------------------------------------------*/
+
+  font-family: "Roboto", "Montserrat", "Poppins", "Inter", sans-serif;
+}
+
+/* ** UNIQUE ** */
+#PROFILE {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#LANDING {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ** OTHER CSS ** */
+body {
+  /* ***addon by me*** */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  background-color: #ffe7ea;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23fff3f4'/%3E%3Cstop offset='1' stop-color='%23fff3f4' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23be73ff'/%3E%3Cstop offset='1' stop-color='%23be73ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2380e5ff'/%3E%3Cstop offset='1' stop-color='%2380e5ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFE7EA'/%3E%3Cstop offset='1' stop-color='%23FFE7EA' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+
+  /*
+  note: uncomment if you remove all mt-4 and mt-5 in the html
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  */
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  color: #333;
+}
+
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
